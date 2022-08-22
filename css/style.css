@@ -1,0 +1,202 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+.circle {
+    /* padding: 10px; */
+    text-align: center;
+    padding-top: 15px;
+    width: 50px;
+    height: 50px;
+    background-color:blue;
+    border-radius: 50%
+  }
+  .square {
+    /* padding: 10px; */
+    text-align: center;
+    padding-top: 15px;
+    width: 50px;
+    height: 50px;
+    background-color:red;
+    border-radius: 50%
+  }
+  .diamond{
+      /* padding: 10px; */
+      text-align: center;
+      padding-top: 15px;
+      width: 50px;
+      height: 50px;
+      background-color:rgb(56, 188, 56);
+      border-radius: 50%
+  }
+  .house{
+    /* padding: 10px; */
+    text-align: center;
+    padding-top: 15px;
+    width: 50px;
+    height: 50px;
+    background-color:rgb(53, 97, 193);
+    border-radius: 50%
+  }
+  .star{
+     /* padding: 10px; */
+     text-align: center;
+     padding-top: 15px;
+     width: 50px;
+     height: 50px;
+     background-color:orangered;
+     border-style: none;
+     border-radius: 50%
+  }
+  .newrow{
+    padding-left: 200px;
+    padding-top: 50px;
+  }
+  .newrow1{
+    padding-left: 50px;
+  }
+  .newrow2{
+    padding-left: 100px;
+  }
+  .kart{
+    border-style: none;
+    /* box-shadow: 10px black; */
+    box-shadow:  1px 1px 15px 0px #888888;
+  }
+  a{
+    text-decoration: none;
+    color:black;
+  }
+  li{
+    
+    list-style: none;
+  }
+a:hover{
+  text-decoration: none;
+  color:#888888
+}
+.contact{
+  background-color:rgb(108, 121, 174);
+}
+  /* //////////////////////////////////// */
+  /* navbar */
+  nav{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* padding:15px; */
+  }
+  .logo{
+    margin:0;
+    padding: 0;
+  }
+  .nav-menu ul{
+    display: flex;
+    /* padding: 0; */
+    /* margin: 0; */
+  }
+  .nav-menu ul li{
+    position: relative;
+    white-space: nowrap;
+    padding: 10px 0px 0px 150px; 
+  }
+  .nav-menu  a{
+    display: block;
+    position: relative;
+    color:blueviolet;
+    transition:0.3s ;
+    font-size: 15px;
+    font-weight:500;
+    text-transform: uppercase;
+  }
+  .nav-menu ul li a::before{
+    content:"";
+    position: absolute;
+    width:100%;
+    height: 2px;
+    bottom: -6px;
+    left:0;
+background-color:darkcyan;
+visibility: hidden;
+width: 0px; 
+transition: all 0.3s ease-in-out;
+  }
+  .nav-menu ul li a:hover::before{
+    visibility: visible;
+    width:100%;
+  }
+  .nav-menu ul li a:hover{
+    color:darkblue
+  }
+  @media   (max-width:768px)
+  {
+    nav{
+      
+      flex-direction: column;
+    } 
+    /* .container{
+      padding:0 !important;
+      margin:0 !important;
+    } */
+    .container{
+      width:100%;
+    }
+    .card1{
+      margin-right:500px;
+      padding:0 !important
+    }
+    .cards{
+      padding: 0 !important;
+      margin: 0!important;
+      position: relative;
+      /* justify-content: center; */
+      /* align-items: center; */
+    }
+    .card2{
+      position: absolute;
+        margin-left: 300px;
+        padding:0 !important;
+        padding-bottom: 150px !important;
+        /* margin-bottom: 200px !important; */
+    }
+    .card3{
+        /* padding-top: 120px; */
+        /* position: absolute; */
+        padding-top:30px;
+        padding-left:0px !important;
+        padding-right:0px !important;
+        padding-bottom: 30px !important;
+        /* padding-right:400px; */
+
+    }
+    .newrow1 {
+      padding: 0 !important;
+      margin:0px !important;
+    }
+    .newrow{
+      padding: 0 !important;
+      margin:0px !important;
+    }
+    .newrow2{
+      padding: 0 !important;
+      margin:0px !important;
+    }
+    .card4{
+      position: absolute;
+      padding-left: 300px !important;
+      padding-top: 20px !important;
+      margin-bottom: 200px !important;
+    }
+    .card3{
+      padding-left: 150px !important;
+    }
+    .card5{
+      padding-bottom: 30px !important;
+      /* position: absolute; */
+      /* bottom: 20px; */
+      padding-top: 20px !important;
+
+    }
+  }
